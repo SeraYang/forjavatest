@@ -11,7 +11,7 @@ pipeline {
         stage('FilesCheck') {
             steps {
                 script {
-                    echo ${WORKSPACE}
+                    echo "${env.WORKSPACE}"
                 }
             }
         }
