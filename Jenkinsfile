@@ -10,7 +10,9 @@ pipeline {
         }
         stage('FilesCheck') {
             steps {
-                echo 'filescheck now ...'
+                script {
+                    echo ${WORKSPACE}
+                }
             }
         }
     }
