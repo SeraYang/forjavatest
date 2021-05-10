@@ -1,11 +1,16 @@
 pipeline {
     agent {
-        label 'abc'
+        label 'java'
     } 
     stages {
-        stage('Stage 1') {
+        stage('SayHello') {
             steps {
                 echo 'Hello world!' 
+            }
+        }
+        stage('FilesCheck') {
+            steps {
+                echo 'filescheck now ...'
             }
         }
     }
